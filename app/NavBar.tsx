@@ -12,7 +12,7 @@ const NavBar = () => {
     { label: "Issues", href: "/issues" },
   ];
   return (
-    <nav className="flex space-x-6 p-5 h-14 border-b items-center">
+    <nav className="flex space-x-6 mb-5 p-5 h-14 border-b items-center">
       <Link href="/">
         <BiSolidBug />
       </Link>
