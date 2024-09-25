@@ -8,8 +8,8 @@ export async function PATCH(
   { params }: { params: { id: string } }
 ) {
   //Protecting patch api
-  // const session = await auth();
-  // if (!session) return NextResponse.json({}, { status: 401 });
+  const session = await auth();
+  if (!session) return NextResponse.json({}, { status: 401 });
 
   const body = await request.json();
   const validation = patchIssueSchema.safeParse(body);
