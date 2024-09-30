@@ -7,7 +7,7 @@ interface Props {
 export default function Home({ searchParams }: Props) {
   return (
     <Pagination
-      itemCount={2}
+      itemCount={100}
       currentPage={parseInt(searchParams.page)}
       pageSize={2}
     />
